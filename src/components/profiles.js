@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import './styles.css';
 
 export default function Profiles({ Leaderboard }) {
@@ -31,8 +30,8 @@ function Item(data) {
                                 )}
                             </div>
                         </div>
-                        <div className='score'>
-                            <span>{profile.points}</span>
+                        <div id='score-box'>
+                          <h5 className='score'>{profile.points}</h5>
                         </div>
                     </div>
                 ))

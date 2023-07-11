@@ -64,8 +64,9 @@
     justify-content: space-between;
     gap: 1em;
     text-align: left;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     width: 90vw;
+    align-items: center;
 }
 
 #profile .flex .item{
@@ -78,9 +79,20 @@
 }
 
 #profile .flex .score {
+    font-size: calc(15px + 0.390625vw);
+    font-weight: 100;
+    background-color: transparent;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#score-box {
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 110%;
+    background-color: white;
+    border-radius: 30vw;
+    width: calc(55px + 0.390625vw);
 }
 
 #profile .flex img{
