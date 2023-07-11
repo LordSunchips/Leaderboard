@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    
+* > * {
+    font-family: "Poppins", cursive;
+    margin: 0;
+    background-color: #9cade6;
+}
+
+:root{
+    --color-dark: #2C3131;
+    --color-light: #F3F3F2;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    text-align: center;
+}
+
+.board .leaderboard{
+    margin-top: 3%;
+    margin-bottom: 1em;
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.board .duration{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.board .duration > button{
+    border: 1px solid var(--color-light);
+    padding: .5em 2em;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.board .duration > button:hover{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.active{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#profile{
+    margin-top: 3em;
+    align-items: center;
+}
+
+#profile .flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    text-align: left;
+    margin-bottom: 2em;
+    width: 90vw;
+}
+
+#profile .flex .item{
+    display: flex;
+    align-items: center;
+}
+
+#profile .flex .name {
+    width: 55vw;
+}
+
+#profile .flex .score {
+    display: flex;
+    align-items: center;
+    font-size: 110%;
+}
+
+#profile .flex img{
+    width: calc(55px + 0.390625vw);
+    border-radius: 50%;
+}
+
+.text-dark{
+    margin-left: calc(10px + 0.390625vw);
+    color: var(--color-dark);
+    font-weight: 100;
+    font-size: calc(15px + 0.390625vw);
+}
